@@ -1,4 +1,4 @@
-# veterinaria
+# venta de ropa
 Laravel
 
 # Instalacion del proyecto
