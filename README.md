@@ -1,4 +1,4 @@
-# venta de ropa
+# proyecto para venta de ropa
 Laravel
 
 # Instalacion del proyecto
