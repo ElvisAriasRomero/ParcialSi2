@@ -186,6 +186,26 @@ class DatabaseSeeder extends Seeder
         $user->precio_compra = '70';
         $user->imagen='shortblanco.jpg';
         $user->save();
+
+        $user = new Producto;
+        $user->nombre = 'Blusa';
+        $user->marca = 'total';
+        $user->color =  'Celeste';
+        $user->stock= '100';
+        $user->precio_comercial = '55';
+        $user->precio_compra = '40';
+        $user->imagen='blusaceleste.jpg';
+        $user->save();
+
+        $user = new Producto;
+        $user->nombre = 'Blusa';
+        $user->marca = 'total';
+        $user->color =  'Rosado';
+        $user->stock= '100';
+        $user->precio_comercial = '55';
+        $user->precio_compra = '40';
+        $user->imagen='blusarosada.jpg';
+        $user->save();
       
     }
 
