@@ -337,8 +337,9 @@
             @csrf
 
             <div class="col-md-5">
-               
-                {{-- <img src="{{asset('imagenes/qr.jpg')}}" alt="QR" height="700px" width="700px" class="img-thumbnail">  --}}
+
+                {{-- para poder pagar con qr --}}
+                <img src="{{asset('imagenes/qr.jpg')}}" alt="QR" height="700px" width="700px" class="img-thumbnail">  
 
 
 
@@ -393,7 +394,7 @@
     </div>
 
 
-@if(session("productos") !== null)
+{{-- @if(session("productos") !== null)
 <div class="table-responsive">
     <table class="table table-bordered">
         <thead>
@@ -442,7 +443,7 @@
         </body>
     </table>
 </div>
-@endif
+@endif --}}
 
 
 
