@@ -172,6 +172,7 @@ class VentaController extends Controller
                 $url=public_path('imagenes\comprobantes');
                 $request->imagen->move($url,$nombre);
                 
+                
                 $this->validate(request(),['nombre'=>'required',
                 'direccion'=>'required',
                 'comprobante'=>'required',

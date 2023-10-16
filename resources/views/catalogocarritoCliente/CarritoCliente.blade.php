@@ -338,7 +338,7 @@
 
             <div class="col-md-5">
                
-                {{-- <img src="{{asset('imagenes/qr.jpg')}}" alt="QR" height="700px" width="700px" class="img-thumbnail"> --}}
+                {{-- <img src="{{asset('imagenes/qr.jpg')}}" alt="QR" height="700px" width="700px" class="img-thumbnail">  --}}
 
 
 
