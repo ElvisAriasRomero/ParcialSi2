@@ -142,43 +142,49 @@ class DatabaseSeeder extends Seeder
         $user->user_id='7';
         $user->save();
 
+
+
+
+        //seeder de todos los productos de la tienda
+
         $user = new Producto;
-        $user->nombre = 'desarmador';
+        $user->nombre = 'Polera';
         $user->marca = 'total';
-        $user->color =  'rojo';
+        $user->color =  'Rojo';
         $user->stock= '100';
-        $user->precio_comercial = '12';
-        $user->precio_compra = '10';
-        $user->imagen='desarmador.jpg';
+        $user->precio_comercial = '125';
+        $user->precio_compra = '110';
+        $user->imagen='poleraroja.jpg';
         $user->save();
 
         $user = new Producto;
-        $user->nombre = 'tenaza';
+        $user->nombre = 'Polera';
         $user->marca = 'total';
-        $user->color =  'naranja';
+        $user->color =  'Blanca';
         $user->stock= '100';
-        $user->precio_comercial = '16';
-        $user->precio_compra = '10';
-        $user->imagen='tenaza.jpg';
+        $user->precio_comercial = '125';
+        $user->precio_compra = '110';
+        $user->imagen='polerablanca.jpg';
+        $user->save();
 
-        $user->save();
         $user = new Producto;
-        $user->nombre = 'llave';
+        $user->nombre = 'Short';
         $user->marca = 'total';
-        $user->color =  'plomo';
+        $user->color =  'Celeste';
         $user->stock= '100';
-        $user->precio_comercial = '19';
-        $user->precio_compra = '10';
-        $user->imagen='llave.jpg';
-        $user->save();
-        $user = new Producto;
-        $user->nombre = 'gato';
-        $user->marca = 'total';
-        $user->color =  'azul';
-        $user->stock= '100';
-        $user->precio_comercial = '90';
+        $user->precio_comercial = '85';
         $user->precio_compra = '70';
-        $user->imagen='gato.jpg';
+        $user->imagen='shortceleste.jpg';
+        $user->save();
+
+        $user = new Producto;
+        $user->nombre = 'Short';
+        $user->marca = 'total';
+        $user->color =  'Blanco';
+        $user->stock= '100';
+        $user->precio_comercial = '85';
+        $user->precio_compra = '70';
+        $user->imagen='shortblanco.jpg';
         $user->save();
       
     }
