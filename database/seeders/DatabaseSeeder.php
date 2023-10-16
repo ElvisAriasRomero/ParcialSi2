@@ -206,7 +206,67 @@ class DatabaseSeeder extends Seeder
         $user->precio_compra = '40';
         $user->imagen='blusarosada.jpg';
         $user->save();
-      
+
+        $user = new Producto;
+        $user->nombre = 'Pantalon';
+        $user->marca = 'total';
+        $user->color =  'Azul Oscuro';
+        $user->stock= '100';
+        $user->precio_comercial = '170';
+        $user->precio_compra = '150';
+        $user->imagen='pantalonazuloscuro.jpg';
+        $user->save();
+
+        $user = new Producto;
+        $user->nombre = 'Pantalon';
+        $user->marca = 'total';
+        $user->color =  'Negro';
+        $user->stock= '100';
+        $user->precio_comercial = '170';
+        $user->precio_compra = '150';
+        $user->imagen='pantalonnegro.jpg';
+        $user->save();
+
+        $user = new Producto;
+        $user->nombre = 'Gorra';
+        $user->marca = 'total';
+        $user->color =  'Lila';
+        $user->stock= '100';
+        $user->precio_comercial = '60';
+        $user->precio_compra = '50';
+        $user->imagen='gorralila.jpg';
+        $user->save();
+
+        $user = new Producto;
+        $user->nombre = 'Gorra';
+        $user->marca = 'total';
+        $user->color =  'Rosado';
+        $user->stock= '100';
+        $user->precio_comercial = '60';
+        $user->precio_compra = '50';
+        $user->imagen='gorrarosada.jpg';
+        $user->save();
+
+        $user = new Producto;
+        $user->nombre = 'Vestido';
+        $user->marca = 'total';
+        $user->color =  'Lila';
+        $user->stock= '100';
+        $user->precio_comercial = '80';
+        $user->precio_compra = '75';
+        $user->imagen='vestidolila.jpg';
+        $user->save();
+
+        $user = new Producto;
+        $user->nombre = 'Vestido';
+        $user->marca = 'total';
+        $user->color =  'Rojo';
+        $user->stock= '100';
+        $user->precio_comercial = '80';
+        $user->precio_compra = '75';
+        $user->imagen='vestidorojo.jpg';
+        $user->save();
+
     }
 
 
