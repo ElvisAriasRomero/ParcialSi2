@@ -14,7 +14,6 @@ class venta extends Model
         'fecha',
         'monto_total',
         'forma_pago',
-        'imagen',
         'comprobante',
         'cliente_id',
         'factura_id',
