@@ -338,13 +338,13 @@
 
             <div class="col-md-5">
                
-                <img src="{{asset('imagenes/qr.jpg')}}" alt="QR" height="700px" width="700px" class="img-thumbnail">
+                {{-- <img src="{{asset('imagenes/qr.jpg')}}" alt="QR" height="700px" width="700px" class="img-thumbnail"> --}}
 
 
 
-                <div class="sidebar-brand-text mx-3"> Comprobante de pago : </div>
+                {{-- <div class="sidebar-brand-text mx-3"> Comprobante de pago : </div>
                 <label for="imagen">Imagen o ScreenShot</label>
-                <input type="file" name="imagen" id="imagen"  accept="image/*" >
+                <input type="file" name="imagen" id="imagen"  accept="image/*" > --}}
 
                 <div class="sidebar-brand-text mx-3"> Nro. de comprobante : </div>
 

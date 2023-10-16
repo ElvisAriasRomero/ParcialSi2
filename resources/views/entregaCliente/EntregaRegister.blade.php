@@ -48,10 +48,8 @@
     
                 <!-- Sidebar - Brand -->
                 <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{route('cliente.listarcatalogocliente')}}">
-                    <div class="sidebar-brand-icon rotate-n-15">
-                        <i class="fas fa-laugh-wink"></i>
-                    </div>
-                    <div class="sidebar-brand-text mx-3">  E-Commerce <sup>2</sup></div>
+
+                    <div class="sidebar-brand-text mx-3">  E-COMMERCE </div>
                 </a>
     
                 <!-- Divider -->
@@ -64,27 +62,7 @@
                         <span>INICIO</span></a>
                 </li>
     
-                              <!-- Divider -->
-                              <hr class="sidebar-divider">
-    
-                              <!-- Heading -->
-                              <div class="sidebar-heading">
-                                 
-                              </div>
-                  
-                              <!-- Nav Item - Pages Collapse Menu -->
-                           
-                  
-                              
-              
-                              <!-- Divider -->
-                              <hr class="sidebar-divider">
-                  
-                             
-              
-                              <!-- Divider -->
-                              <hr class="sidebar-divider">
-                  
+
                               <!-- Heading -->
                               <div class="sidebar-heading">
                                   
@@ -127,20 +105,7 @@
                             <i class="fa fa-bars"></i>
                         </button>
     
-                        <!-- Topbar Search -->
-                        <form
-                            class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                            <div class="input-group">
-                                <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
-                                    aria-label="Search" aria-describedby="basic-addon2">
-                                <div class="input-group-append">
-                                    <button class="btn btn-primary" type="button">
-                                        <i class="fas fa-search fa-sm"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
-    
+                        
                         <!-- Topbar Navbar -->
                         <ul class="navbar-nav ml-auto">
     
@@ -167,37 +132,7 @@
                                     </form>
                                 </div>
                             </li>
-    
-                            <!-- Nav Item - Alerts -->
-                            <li class="nav-item dropdown no-arrow mx-1">
-                                <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="fas fa-bell fa-fw"></i>
-                                    <!-- Counter - Alerts -->
-                                    <span class="badge badge-danger badge-counter">3+</span>
-                                </a>
-                                <!-- Dropdown - Alerts -->
-                                <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                                    aria-labelledby="alertsDropdown">
-                                    <h6 class="dropdown-header">
-                                       Notificaciones
-                                    </h6>
-                                
-                                    <a class="dropdown-item d-flex align-items-center" href="#">
-                                        <div class="mr-3">
-                                            <div class="icon-circle bg-success">
-                                                <i class="fas fa-donate text-white"></i>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="small text-gray-500">December 7, 2019</div>
-                                            $290.29 has been deposited into your account!
-                                        </div>
-                                    </a>
-                              
-                                    <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
-                                </div>
-                            </li>
+
     
                             <!-- Nav Item - Messages -->
                             <li class="nav-item dropdown no-arrow mx-1">
@@ -312,11 +247,11 @@
 <div class="container-fluid">
     
   <!-- Page Heading -->
-  <div class="d-sm-flex align-items-center justify-content-between mb-4">
-      <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+{{--   <div class="d-sm-flex align-items-center justify-content-between mb-4">
+      <h1 class="h3 mb-0 text-gray-800"> </h1>
       <a href="{{route('admin.pdfproductos')}}" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-              class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
-  </div>
+              class="fas fa-download fa-sm text-white-50"></i> Generar Reporte</a>
+  </div> --}}
 
   <!-- Content Row -->
 
@@ -329,7 +264,7 @@
 
           <!-- #############################################################3######-->
 
-          <a href="{{route('admin.crearProducto')}}" class="mx-2 font-semibold border-2 border-white py-2 px-8 pt-1 h-10 rounded-md hover:bg-white hover:text-blue-700">Crear</a>
+          {{-- <a href="{{route('admin.crearProducto')}}" class="mx-2 font-semibold border-2 border-white py-2 px-8 pt-1 h-10 rounded-md hover:bg-white hover:text-blue-700">Crear</a> --}}
 
   <h1 class="text-3xl text-center font-bold">Lista de Entregas del cliente: {{ auth()->user()->name}}</h1>
 
