@@ -256,7 +256,7 @@
 
           <!-- #############################################################3######-->
 
-<a href="{{route('admin.crearProducto')}}" class="mx-2 font-semibold border-2 border-blue py-2 px-8 pt-1 h-10 rounded-md hover:bg-white hover:text-blue-700">Crear</a>
+{{-- <a href="{{route('admin.crearProducto')}}" class="mx-2 font-semibold border-2 border-blue py-2 px-8 pt-1 h-10 rounded-md hover:bg-white hover:text-blue-700">Crear</a> --}}
 <h1 class="text-3xl text-center font-bold">Lista de Entregas</h1>
 
 
