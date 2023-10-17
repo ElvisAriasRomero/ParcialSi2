@@ -19,6 +19,7 @@ class CreateVentasTable extends Migration
             $table->float('monto_total', 8, 2);
             $table->string('forma_pago'); 
 
+            $table->string('imagen')->nullable();
             $table->unsignedBigInteger('comprobante')->nullable();
 
             $table->unsignedBigInteger('cliente_id')->nullable();

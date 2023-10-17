@@ -106,7 +106,7 @@ class VentaClienteController extends Controller
             $producto->Subtotal = $producto->precio_comercial * $cantidad;
             array_push($productos, $producto);
             // Update the product's stock
-           /*  $producto->stock -= $cantidad;
+            /* $producto->stock -= $cantidad;
             $producto->save(); */
         }
 
