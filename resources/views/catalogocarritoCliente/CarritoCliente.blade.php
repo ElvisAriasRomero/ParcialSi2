@@ -340,7 +340,7 @@
 
                 <div class="visible-print text-center">
                     {!! QrCode::size(300)->generate(route('cliente.carrito')); !!}
-                    <p style="text-align: left;" ><strong> SCANEE EL CODIGO QR PARA PAGAR. </strong></p>
+                    <p style="text-align: left;" ><strong> SCANEE EL CODIGO QR PARA PAGAR </strong></p>
                 </div>
 
                 {{-- <div class="sidebar-brand-text mx-3"> Comprobante de pago : </div>
