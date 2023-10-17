@@ -236,7 +236,6 @@ class VentaClienteController extends Controller
                     ]);
                     $productovendido->save();
                 
-
                 }
                 $this->vaciarProductos();
             
