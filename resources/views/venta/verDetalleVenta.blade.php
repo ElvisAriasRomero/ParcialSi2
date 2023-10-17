@@ -19,7 +19,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
     
-        <title>SB Admin 22 - Dashboard</title>
+        <title>Admin2023</title>
     
         <!-- Custom fonts for this template-->
         <link href="{{asset('bsadmin/vendor/fontawesome-free/css/all.min.css  ')}}" rel="stylesheet" type="text/css">
@@ -48,10 +48,8 @@
     
                 <!-- Sidebar - Brand -->
                 <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{route('admin.index')}}">
-                    <div class="sidebar-brand-icon rotate-n-15">
-                        <i class="fas fa-laugh-wink"></i>
-                    </div>
-                    <div class="sidebar-brand-text mx-3">  Confort Solares <sup>2</sup></div>
+
+                    <div class="sidebar-brand-text mx-3"> E-COMMERCE</div>
                 </a>
     
                 <!-- Divider -->
@@ -64,87 +62,28 @@
                         <span>INICIO</span></a>
                 </li>
     
+                           
                              <!-- Divider -->
                              <hr class="sidebar-divider">
-    
-                             <!-- Heading -->
-                             <div class="sidebar-heading">
-                                 Mod. USUARIO
-                             </div>
-                 
-                             <!-- Nav Item - Pages Collapse Menu -->
-                             <li class="nav-item">
-                                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-                                     aria-expanded="true" aria-controls="collapseTwo">
-                                     <i class="fas fa-fw fa-cog"></i>
-                                     <span>USUARIO</span>
-                                 </a>
-                                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                                     <div class="bg-white py-2 collapse-inner rounded">
-                                         <h6 class="collapse-header">Custom Components:</h6>
-                                         <a class="collapse-item" href="{{route('admin.registrarusuario')}}"> Usuarios</a> 
-                                          <!-- encamina hacia las rutas -->
-                                         
-                                         <a class="collapse-item" href="{{route('admin.roles')}}">Roles</a>
-                                         <a class="collapse-item" href="{{route('admin.listarpersonal')}}">Personal</a>
-                           
-                                     </div>
-                                 </div>
-                             </li>
-                 
+
+                         <li class="nav-item">
+                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo2"
+                                aria-expanded="true" aria-controls="collapseTwo2">
+                                <i class="fas fa-fw fa-cog"></i>
+                                <span>VENTA</span>
+                            </a>
+                            <div id="collapseTwo2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                                <div class="bg-white py-2 collapse-inner rounded">
+                                    {{-- <h6 class="collapse-header">Custom Components:</h6> --}}
+                                     <a class="collapse-item" href="{{route('admin.listarventa')}}">Ventas</a>
+                                   
+                                    </div>
+                            </div>
+                        </li>
+             
+             
+             
                              
-             
-                             <!-- Divider -->
-                             <hr class="sidebar-divider">
-                 
-                             <!-- Heading -->
-                             <div class="sidebar-heading">
-                                 Mod. Venta / Cliente
-                             </div>
-                 
-                             <!-- Nav Item - Pages Collapse Menu -->
-                             <li class="nav-item">
-                                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo2"
-                                     aria-expanded="true" aria-controls="collapseTwo2">
-                                     <i class="fas fa-fw fa-cog"></i>
-                                     <span>VENTA</span>
-                                 </a>
-                                 <div id="collapseTwo2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                                     <div class="bg-white py-2 collapse-inner rounded">
-                                         <h6 class="collapse-header">Custom Components:</h6>
-                                        
-                                          <!-- encamina hacia las rutas -->
-                                        
-                                         </div>
-                                 </div>
-                             </li>
-             
-             
-             
-                             <!-- Divider -->
-                             <hr class="sidebar-divider">
-                 
-                             <!-- Heading -->
-                             <div class="sidebar-heading">
-                                 MOD.
-                             </div>
-             
-                             <!-- Nav Item - Utilities Collapse Menu -->
-                           
-                 
-                             <!-- Divider -->
-                             <hr class="sidebar-divider">
-                 
-                             <!-- Heading -->
-                             <div class="sidebar-heading">
-                                 MOD. INVENTARIO
-                             </div>
-                 
-                             <!-- Nav Item - Pages Collapse Menu -->
-                          
-                               
-    
-    
                 <!-- Divider -->
                 <hr class="sidebar-divider d-none d-md-block">
     
@@ -177,19 +116,7 @@
                             <i class="fa fa-bars"></i>
                         </button>
     
-                        <!-- Topbar Search -->
-                        <form
-                            class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                            <div class="input-group">
-                                <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
-                                    aria-label="Search" aria-describedby="basic-addon2">
-                                <div class="input-group-append">
-                                    <button class="btn btn-primary" type="button">
-                                        <i class="fas fa-search fa-sm"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
+                        
     
                         <!-- Topbar Navbar -->
                         <ul class="navbar-nav ml-auto">
@@ -218,36 +145,6 @@
                                 </div>
                             </li>
     
-                            <!-- Nav Item - Alerts -->
-                            <li class="nav-item dropdown no-arrow mx-1">
-                                <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="fas fa-bell fa-fw"></i>
-                                    <!-- Counter - Alerts -->
-                                    <span class="badge badge-danger badge-counter">3+</span>
-                                </a>
-                                <!-- Dropdown - Alerts -->
-                                <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                                    aria-labelledby="alertsDropdown">
-                                    <h6 class="dropdown-header">
-                                       Notificaciones
-                                    </h6>
-                                
-                                    <a class="dropdown-item d-flex align-items-center" href="#">
-                                        <div class="mr-3">
-                                            <div class="icon-circle bg-success">
-                                                <i class="fas fa-donate text-white"></i>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="small text-gray-500">December 7, 2019</div>
-                                            $290.29 has been deposited into your account!
-                                        </div>
-                                    </a>
-                              
-                                    <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
-                                </div>
-                            </li>
     
                             <!-- Nav Item - Messages -->
                             <li class="nav-item dropdown no-arrow mx-1">
@@ -363,9 +260,9 @@
     
   <!-- Page Heading -->
   <div class="d-sm-flex align-items-center justify-content-between mb-4">
-      <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-      <a href="{{route('admin.pdfdetalleventas', $id)}}" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-              class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+      <h1 class="h3 mb-0 text-gray-800"> </h1>
+      {{-- <a href="{{route('admin.pdfdetalleventas', $id)}}" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+              class="fas fa-download fa-sm text-white-50"></i> Generar Reporte</a> --}}
   </div>
 
   <!-- Content Row -->
