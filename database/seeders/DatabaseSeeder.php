@@ -35,7 +35,7 @@ class DatabaseSeeder extends Seeder
         $user->save();
 
         $user = new User;
-        $user->name = 'mamani';
+        $user->name = 'bill';
         $user->carnet = '456546';
         $user->email =  'user2@gmail.com';
         $user->password = '1234';
@@ -43,7 +43,7 @@ class DatabaseSeeder extends Seeder
         $user->save();
 
         $user = new User;
-        $user->name = 'mamani';
+        $user->name = 'chinin';
         $user->carnet = '53452324';
         $user->email =  'user3@gmail.com';
         $user->password = '1234';
