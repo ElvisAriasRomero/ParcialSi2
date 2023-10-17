@@ -343,6 +343,11 @@
                     <p style="text-align: left;" ><strong> SCANEE EL CODIGO QR PARA PAGAR </strong></p>
                 </div>
 
+                
+                {{-- para poder pagar con qr --}}
+                {{-- <img src="{{asset('imagenes/qr.jpg')}}" alt="QR" height="700px" width="700px" class="img-thumbnail">   --}}
+
+
                 {{-- <div class="sidebar-brand-text mx-3"> Comprobante de pago : </div>
                 <label for="imagen">Imagen o ScreenShot</label>
                 <input type="file" name="imagen" id="imagen"  accept="image/*" > --}}
