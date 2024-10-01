@@ -44,7 +44,7 @@
         <div id="wrapper">
     
             <!-- Sidebar -->
-            <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+            <ul class="navbar-nav bg-gradient-success sidebar sidebar-dark accordion rounded-lg shadow" id="accordionSidebar">
     
                 <!-- Sidebar - Brand -->
                 <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{route('admin.index')}}">
@@ -328,29 +328,29 @@
         @foreach($user as $row)
   
         <tr>
-                <td class="py-3 px-7">{{$row->id}}</td>
-                <td class="p-3">{{$row->nombre}}</td>
-                <td class="p-3 text-center">{{$row->marca}}</td>
-                <td class="p-3 text-center">{{$row->color}}</td>
-                <td class="p-3 text-center">{{$row->stock}}</td>
-                <td class="p-3 text-center">{{$row->precio_comercial}}</td>
-                <td class="p-3 text-center">{{$row->precio_compra}}</td>
+                <td class="py-3 px-7">{{ $row['id'] }}</td>
+                <td class="p-3">{{ $row['nombre'] }}</td>
+                <td class="p-3">{{ $row['marca'] }}</td>
+                <td class="p-3">{{ $row['color'] }}</td>
+                <td class="p-3">{{ $row['stock'] }}</td>
+                <td class="p-3">{{ $row['precio_comercial'] }}</td>
+                <td class="p-3">{{ $row['precio_compra'] }}</td>
                 <td>
-                    @if ($row->imagen)
-                       <img src="{{asset('imagenes/productos/'.$row->imagen)}}" alt="{{$row->nombre}}" height="100px" width="100px" class="img-thumbnail">
+                    @if ($row['imagen'])
+                    <img src="https://backendtienda-production-0535.up.railway.app/productos/imagen/{{$row['id']}}" alt="{{$row['nombre']}}" height="100px" width="100px" class="img-thumbnail">
                     @endif
                  </td>
                 <td class="p-3">
                     
                    
-                    <a href="{{ route('admin.destroyproductos', $row->id )}}" class="btn btn-danger btn-icon-split">
+                    <a href="{{ route('admin.destroyproductos',  $row['id']  )}}" class="btn btn-danger btn-icon-split">
                         <span class="icon text-white-50">
                             <i class="fas fa-trash"></i>
                         </span>
                         <span class="text">Borrar</span>
                     </a>
                     
-                    <a href="{{ route('admin.editproductos', $row->id )}}" class="btn btn-success btn-icon-split">
+                    <a href="{{ route('admin.editproductos',  $row['id'] )}}" class="btn btn-success btn-icon-split">
                         <span class="icon text-white-50">
                             <i class="fas fa-check"></i>
                         </span>

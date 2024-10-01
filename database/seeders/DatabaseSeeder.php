@@ -29,8 +29,8 @@ class DatabaseSeeder extends Seeder
         $user = new User;
         $user->name = 'admin';
         $user->carnet = '1234';
-        $user->email =  'admin@ventaropa.com';
-        $user->password = '12345';
+        $user->email =  'admin@admin';
+        $user->password = '0000';
         $user->role = 'admin';
         $user->save();
 
@@ -154,7 +154,7 @@ class DatabaseSeeder extends Seeder
         $user->stock= '100';
         $user->precio_comercial = '125';
         $user->precio_compra = '110';
-        $user->imagen='poleraroja.jpg';
+        $user->imagen='src/main/resources/static/imagenes/poleraroja.jpg';
         $user->save();
 
         $user = new Producto;
@@ -164,7 +164,7 @@ class DatabaseSeeder extends Seeder
         $user->stock= '100';
         $user->precio_comercial = '125';
         $user->precio_compra = '110';
-        $user->imagen='polerablanca.jpg';
+        $user->imagen='src/main/resources/static/imagenes/polerablanca.jpg';
         $user->save();
 
         $user = new Producto;
@@ -174,7 +174,7 @@ class DatabaseSeeder extends Seeder
         $user->stock= '100';
         $user->precio_comercial = '85';
         $user->precio_compra = '70';
-        $user->imagen='shortceleste.jpg';
+        $user->imagen='src/main/resources/static/imagenes/shortceleste.jpg';
         $user->save();
 
         $user = new Producto;
@@ -184,7 +184,7 @@ class DatabaseSeeder extends Seeder
         $user->stock= '100';
         $user->precio_comercial = '85';
         $user->precio_compra = '70';
-        $user->imagen='shortblanco.jpg';
+        $user->imagen='src/main/resources/static/imagenes/shortblanco.jpg';
         $user->save();
 
         $user = new Producto;
@@ -194,7 +194,7 @@ class DatabaseSeeder extends Seeder
         $user->stock= '100';
         $user->precio_comercial = '55';
         $user->precio_compra = '40';
-        $user->imagen='blusaceleste.jpg';
+        $user->imagen='src/main/resources/static/imagenes/blusaceleste.jpg';
         $user->save();
 
         $user = new Producto;
@@ -204,7 +204,7 @@ class DatabaseSeeder extends Seeder
         $user->stock= '100';
         $user->precio_comercial = '55';
         $user->precio_compra = '40';
-        $user->imagen='blusarosada.jpg';
+        $user->imagen='src/main/resources/static/imagenes/blusarosada.jpg';
         $user->save();
 
         $user = new Producto;
@@ -214,7 +214,7 @@ class DatabaseSeeder extends Seeder
         $user->stock= '100';
         $user->precio_comercial = '170';
         $user->precio_compra = '150';
-        $user->imagen='pantalonazuloscuro.jpg';
+        $user->imagen='src/main/resources/static/imagenes/pantalonazuloscuro.jpg';
         $user->save();
 
         $user = new Producto;
@@ -224,7 +224,7 @@ class DatabaseSeeder extends Seeder
         $user->stock= '100';
         $user->precio_comercial = '170';
         $user->precio_compra = '150';
-        $user->imagen='pantalonnegro.jpg';
+        $user->imagen='src/main/resources/static/imagenes/pantalonnegro.jpg';
         $user->save();
 
         $user = new Producto;
@@ -234,7 +234,7 @@ class DatabaseSeeder extends Seeder
         $user->stock= '100';
         $user->precio_comercial = '60';
         $user->precio_compra = '50';
-        $user->imagen='gorralila.jpg';
+        $user->imagen='src/main/resources/static/imagenes/gorralila.jpg';
         $user->save();
 
         $user = new Producto;
@@ -244,7 +244,7 @@ class DatabaseSeeder extends Seeder
         $user->stock= '100';
         $user->precio_comercial = '60';
         $user->precio_compra = '50';
-        $user->imagen='gorrarosada.jpg';
+        $user->imagen='src/main/resources/static/imagenes/gorrarosada.jpg';
         $user->save();
 
         $user = new Producto;
@@ -254,7 +254,7 @@ class DatabaseSeeder extends Seeder
         $user->stock= '100';
         $user->precio_comercial = '80';
         $user->precio_compra = '75';
-        $user->imagen='vestidolila.jpg';
+        $user->imagen='src/main/resources/static/imagenes/vestidolila.jpg';
         $user->save();
 
         $user = new Producto;
@@ -264,7 +264,7 @@ class DatabaseSeeder extends Seeder
         $user->stock= '100';
         $user->precio_comercial = '80';
         $user->precio_compra = '75';
-        $user->imagen='vestidorojo.jpg';
+        $user->imagen='src/main/resources/static/imagenes/vestidorojo.jpg';
         $user->save();
 
     }

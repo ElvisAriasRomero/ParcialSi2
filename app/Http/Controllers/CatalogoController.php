@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\producto;
+use GuzzleHttp\Client;
 
 
 class CatalogoController extends Controller
@@ -11,7 +12,10 @@ class CatalogoController extends Controller
     //
 
     public function ListarC(){
-        $user = producto::all();
+        // $user = producto::all();
+        $client = new Client();
+        $response = $client->request('GET', 'https://backendtienda-production-0535.up.railway.app/productos');
+        $user = json_decode($response->getBody(), true);
         return view('catalogocarrito.ProductoRegister', compact('user'));
         
     }

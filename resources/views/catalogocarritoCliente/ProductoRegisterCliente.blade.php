@@ -41,7 +41,7 @@
         <div id="wrapper">
     
             <!-- Sidebar -->
-            <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+            <ul class="navbar-nav bg-gradient-success sidebar sidebar-dark accordion rounded-lg shadow" id="accordionSidebar">
     
                 <!-- Sidebar - Brand -->
                 <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{route('cliente.listarcatalogocliente')}}">
@@ -299,12 +299,12 @@
                     <div class="card" style="margin-bottom: 20px; height: auto;">
                        
                         <div class="card-body">
-                             <img src="{{asset('imagenes/productos/'.$pro->imagen)}}" alt="{{$pro->nombre}}" height="300px" width="300px" class="img-thumbnail">
-                            <a href=""><h6 class="card-title">{{ $pro->nombre }} :: {{ $pro->marca }}</h6></a>
-                            <p>${{ $pro->precio_comercial}}</p>
-                            <p>Stock : {{ $pro->stock}}</p>
+                            <img src="https://backendtienda-production-0535.up.railway.app/productos/imagen/{{$pro['id']}}" alt="{{$pro['nombre']}}" height="300px" width="300px" class="img-thumbnail">
+                            <a href=""><h6 class="card-title">{{ $pro['nombre'] }} :: {{ $pro['marca'] }}</h6></a>
+                            <p>${{ $pro['precio_comercial']}}</p>
+                            <p>Stock : {{ $pro['stock']}}</p>
                             <td class="p-3">
-                                <form action="{{route("cliente.agregarProductoVenta",$pro->id)}}" method="post" class="row">
+                                <form action="{{route("cliente.agregarProductoVenta",$pro['id'])}}" method="post" class="row">
                                     @csrf
                                 <div class="col-12 col-md-7">                          
                                           <label for="ci">Cantidad</label>

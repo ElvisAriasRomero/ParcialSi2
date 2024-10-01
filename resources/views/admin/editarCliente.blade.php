@@ -3,7 +3,7 @@
 @section('title','Editar Cliente')
 
 @section('content')
-<nav class="bg-green-500 py-6">
+<nav class="bg-green-300 py-6 ">
     <a href="{{route('admin.registrarcliente')}}" class="text-white mx-16 font-semibold border-2 border-white py-3 px-5 pt-1 h-10 rounded-md hover:bg-white hover:text-green-700">Atras</a>
 </nav>
 

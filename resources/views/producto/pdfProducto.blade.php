@@ -56,13 +56,13 @@
       @foreach($user as $row)
 
       <tr>
-            <td class="py-3 px-7">{{$row->id}}</td>
-            <td class="p-3">{{$row->nombre}}</td>
-            <td class="p-3 text-center">{{$row->marca}}</td>
-            <td class="p-3 text-center">{{$row->color}}</td>
-            <td class="p-3 text-center">{{$row->stock}}</td>
-            <td class="p-3 text-center">{{$row->precio_comercial}}</td>
-            <td class="p-3 text-center">{{$row->precio_compra}}</td>
+            <td class="py-3 px-7">{{$row['id']}}</td>
+            <td class="p-3">{{$row['nombre']}}</td>
+            <td class="p-3 text-center">{{$row['marca']}}</td>
+            <td class="p-3 text-center">{{$row['color']}}</td>
+            <td class="p-3 text-center">{{$row['stock']}}</td>
+            <td class="p-3 text-center">{{$row['precio_comercial']}}</td>
+            <td class="p-3 text-center">{{$row['precio_compra']}}</td>
        
         </tr>
   

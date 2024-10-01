@@ -37,7 +37,11 @@
         <div id="wrapper">
     
             <!-- Sidebar -->
-            <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+            
+            <ul class="navbar-nav bg-gradient-success sidebar sidebar-dark accordion rounded-lg shadow" id="accordionSidebar">
+
+
+ 
     
                 <!-- Sidebar - Brand -->
                 <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{route('admin.index')}}">
@@ -149,7 +153,7 @@
                 <!-- Sidebar Message -->
                 <div class="sidebar-card d-none d-lg-flex">
                   
-                    <p class="text-center mb-2"><strong> Dashboard</strong> items, components, and more!</p>
+                    <p class="text-center mb-2"><strong>Dashboard</strong> items, components, and more!</p>
                     
                 </div>
     
@@ -163,7 +167,12 @@
                 <div id="content">
     
                     <!-- Topbar -->
-                    <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+       
+                    <nav class="navbar navbar-expand navbar-dark bg-success topbar mb-4 static-top shadow rounded">
+
+
+
+                        
     
                         <!-- Sidebar Toggle (Topbar) -->
                         <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
@@ -331,7 +340,7 @@
  
             <div class="text-center">
                 <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 90rem;"
-                    src="   {{asset('tiendaropa.jpg')}}" alt="...">
+                    src="   {{asset('store.jpg')}}" alt="...">
             </div>
        
 

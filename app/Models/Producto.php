@@ -18,9 +18,8 @@ class Producto extends Model
         'imagen'
     ];
 
+    public $timestamps = false;
 
-  
 
-  
-  
 }
+

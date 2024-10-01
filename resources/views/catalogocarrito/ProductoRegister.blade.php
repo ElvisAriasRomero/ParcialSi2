@@ -44,7 +44,7 @@
         <div id="wrapper">
     
             <!-- Sidebar -->
-            <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+            <ul class="navbar-nav bg-gradient-success sidebar sidebar-dark accordion rounded-lg shadow" id="accordionSidebar">
     
                 <!-- Sidebar - Brand -->
                 <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{route('admin.index')}}">
@@ -306,7 +306,6 @@
                             <th>Precio Comercial</th>
                             <th>stock </th>
                             <th>imagen</th>
-                       
                             <th>Actions</th>
                         </tr>
                     </tfoot>
@@ -317,18 +316,18 @@
         @foreach($user as $row)
   
        <tr>
-                <td class="py-3 px-7">{{$row->id}}</td>
-                <td class="p-3">{{$row->nombre}}:: {{ $row->marca }}</td>
-                <td class="p-3 text-center">{{$row->precio_comercial}}</td>
-                <td class="p-3 text-center">{{$row->stock}}</td>
+                <td class="py-3 px-7">{{$row['id']}}</td>
+                <td class="p-3">{{$row['nombre']}}:: {{ $row['marca']}}</td>
+                <td class="p-3 text-center">{{$row['precio_comercial']}}</td>
+                <td class="p-3 text-center">{{$row['stock']}}</td>
                 <td>
-                    @if ($row->imagen)
-                       <img src="{{asset('imagenes/productos/'.$row->imagen)}}" alt="{{$row->nombre}}" height="100px" width="100px" class="img-thumbnail">
+                    @if ($row['imagen'])
+                    <img src="https://backendtienda-production-0535.up.railway.app/productos/imagen/{{$row['id']}}" alt="{{$row['nombre']}}" height="100px" width="100px" class="img-thumbnail">
                     @endif
                  </td>
 
                 <td class="p-3">
-                    <form action="{{route("admin.agregarProductoVenta",$row->id)}}" method="post" class="row">
+                    <form action="{{route("admin.agregarProductoVenta",$row['id'])}}" method="post" class="row">
                         @csrf
                     <div class="col-12 col-md-7">                          
                               <label for="ci">Cantidad</label>
@@ -381,12 +380,12 @@
                 <div class="card" style="margin-bottom: 20px; height: auto;">
                    
                     <div class="card-body">
-                         <img src="{{asset('imagenes/productos/'.$pro->imagen)}}" alt="{{$pro->nombre}}" height="300px" width="300px" class="img-thumbnail">
-                        <a href=""><h6 class="card-title">{{ $pro->nombre }} :: {{ $pro->marca }}</h6></a>
-                        <p>Bs : {{ $pro->precio_comercial}}</p>
-                        <p>Stock : {{ $pro->stock}}</p>
+                        <img src="https://backendtienda-production-0535.up.railway.app/productos/imagen/{{$pro['id']}}" alt="{{$pro['nombre']}}" height="100px" width="100px" class="img-thumbnail">
+                        <a href=""><h6 class="card-title">{{ $pro['nombre'] }} :: {{ $pro['marca'] }}</h6></a>
+                        <p>Bs : {{ $pro['precio_comercial']}}</p>
+                        <p>Stock : {{ $pro['stock']}}</p>
                         <td class="p-3">
-                            <form action="{{route("admin.agregarProductoVenta",$pro->id)}}" method="post" class="row">
+                            <form action="{{route("admin.agregarProductoVenta",$pro['id'])}}" method="post" class="row">
                                 @csrf
                             <div class="col-12 col-md-7">                          
                                       <label for="ci">Cantidad</label>

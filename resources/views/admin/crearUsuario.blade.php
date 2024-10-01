@@ -4,7 +4,7 @@
 
 @section('content')
 
-<nav class="bg-blue-500 py-6">
+<nav class="bg-green-300 py-6 ">
     <a href="{{route('admin.registrarusuario')}}" class="text-white mx-16 font-semibold border-2 border-white py-3 px-5 pt-1 h-10 rounded-md hover:bg-white hover:text-blue-700">Atras</a>
 </nav>
 
